@@ -160,6 +160,41 @@ document.addEventListener('DOMContentLoaded', () => {
     track.addEventListener('mouseleave', () => resetAutoPlay());
 
     // Initialize
+    // Initialize
     updateCarousel();
   }
 });
+
+// --- Testimonial Slider Logic ---
+let currentTestiIndex = 0;
+window.showTesti = function(index) {
+  const slides = document.querySelectorAll('.testi-slide');
+  if (!slides.length) return;
+  
+  if (index >= slides.length) currentTestiIndex = 0;
+  else if (index < 0) currentTestiIndex = slides.length - 1;
+  else currentTestiIndex = index;
+  
+  slides.forEach((slide, i) => {
+    if (i === currentTestiIndex) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
+};
+
+window.nextTesti = function() {
+  window.showTesti(currentTestiIndex + 1);
+};
+
+window.prevTesti = function() {
+  window.showTesti(currentTestiIndex - 1);
+};
+
+// Auto Play for Testimonials
+setInterval(() => {
+  if(document.querySelector('.testi-slide')) {
+    window.nextTesti();
+  }
+}, 5000);
