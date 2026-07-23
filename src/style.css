@@ -166,14 +166,14 @@ ul {
 
 @media (max-width: 900px) {
   .logo-divider {
-    height: 32px;
+    height: 40px;
     margin: 0 0.25rem;
   }
   .accred-logo {
-    height: 32px;
+    height: 40px;
   }
   .logo-img {
-    max-height: 80px;
+    max-height: 95px;
     margin-top: -20px;
     margin-bottom: -20px;
   }
@@ -184,16 +184,16 @@ ul {
 
 @media (max-width: 500px) {
   .logo-divider {
-    height: 28px;
+    height: 34px;
     margin: 0 0.15rem;
   }
   .accred-logo {
-    height: 28px;
+    height: 34px;
   }
   .logo-img {
-    max-height: 65px;
-    margin-top: -12px;
-    margin-bottom: -12px;
+    max-height: 75px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
 }
 
