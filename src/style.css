@@ -164,6 +164,10 @@ ul {
   object-fit: contain;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .logo-divider {
     height: 40px;
@@ -179,6 +183,9 @@ ul {
   }
   .logo-group {
     gap: 0.25rem;
+  }
+  .mobile-only {
+    display: block;
   }
 }
 
