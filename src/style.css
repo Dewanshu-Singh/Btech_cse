@@ -184,13 +184,14 @@ ul {
 
 @media (max-width: 500px) {
   .logo-divider {
-    height: 16px;
+    height: 24px;
+    margin: 0 0.15rem;
   }
   .accred-logo {
-    height: 16px;
+    height: 24px;
   }
   .logo-img {
-    max-height: 40px;
+    max-height: 50px;
     margin-top: -10px;
     margin-bottom: -10px;
   }
@@ -258,13 +259,8 @@ ul {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.navbar.scrolled .hamburger span {
   background-color: var(--text-main);
+  border-radius: 2px;
   transition: all 0.3s ease;
 }
 
