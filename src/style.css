@@ -132,6 +132,12 @@ ul {
   gap: 1.5rem;
 }
 
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -143,6 +149,31 @@ ul {
   display: block;
   margin-top: -30px; /* Adjust for transparent padding in image */
   margin-bottom: -30px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 40px;
+  background: #e2e8f0;
+  margin: 0 0.5rem;
+}
+
+.accred-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .logo-divider,
+  .accred-logo {
+    display: none;
+  }
+  .logo-img {
+    max-height: 80px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
 }
 
 .footer-logo {
