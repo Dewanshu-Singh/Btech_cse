@@ -207,8 +207,13 @@ ul {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: var(--text-dark);
+  background-color: #ffffff;
   border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .hamburger span {
+  background-color: var(--text-main);
   transition: all 0.3s ease;
 }
 
