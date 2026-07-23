@@ -20,20 +20,28 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
-        <div class="logo-group" style="display: flex; align-items: center; gap: 1rem;">
-          <a href="#" class="logo"><img src="/sgvu-logo.png" alt="SGVU Logo" class="logo-img"></a>
-          <img src="/naac%20a%20pluss.png" alt="NAAC A+" style="height: 55px; width: auto; object-fit: contain; margin-left: 0.5rem;">
-          <img src="/nrf%20k%20LGO.png" alt="NIRF" style="height: 55px; width: auto; object-fit: contain;">
+        <div class="logo-group" style="display: flex; align-items: center; gap: 0.75rem;">
+          <a href="#home" class="logo"><img src="/sgvu-logo.png" alt="SGVU Logo" class="logo-img"></a>
+          <div style="width: 1px; height: 40px; background: #e2e8f0; margin: 0 0.5rem;"></div>
+          <img src="/naac%20a%20pluss.png" alt="NAAC A+" style="height: 48px; width: auto; object-fit: contain;">
+          <img src="/nrf%20k%20LGO.png" alt="NIRF" style="height: 48px; width: auto; object-fit: contain;">
         </div>
         <ul class="nav-links">
           <li><a href="#specializations">Programs</a></li>
-          <li><a href="#four-labs">Four Labs</a></li>
+          <li><a href="#labs">Four Labs</a></li>
           <li><a href="#why-sgvu">Why SGVU</a></li>
           <li><a href="#residency">Residency</a></li>
           <li><a href="#campus">Campus Life</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
         </ul>
-        <a href="#apply" class="btn btn-primary">Apply Now</a>
+        <div class="nav-actions">
+          <a href="#apply-form" class="btn btn-primary">Apply Now</a>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -43,11 +51,35 @@
         <div class="hero-content">
           <h1 class="hero-title reveal">B.Tech <span class="highlight">Computer Science</span></h1>
           <p class="hero-subtitle reveal delay-1">Empowering the next generation of tech leaders with cutting-edge specializations and industry-aligned curriculum.</p>
+          
+          <div class="hero-specializations reveal delay-1">
+            <span class="hero-spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              AI & Machine Learning
+            </span>
+            <span class="hero-spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Data Engineering
+            </span>
+            <span class="hero-spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              Cloud Engineering
+            </span>
+            <span class="hero-spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>
+              Robotics
+            </span>
+            <span class="hero-spec-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Cyber Security
+            </span>
+          </div>
+
           <div class="hero-cta reveal delay-2">
             <a href="/aestr-brochure.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Download Brochure</a>
           </div>
         </div>
-        <div class="hero-form-wrapper reveal delay-3">
+        <div class="hero-form-wrapper reveal delay-3" id="apply-form">
           <form class="glass-form" action="#" method="POST">
             <h3>Apply Now</h3>
             <p>Take the first step towards your dream career.</p>
@@ -120,6 +152,31 @@
       </div>
     </section>
 
+    <!-- Top Recruiters Section -->
+    <section class="section top-recruiters">
+      <div class="container text-center">
+        <h2 class="recruiters-title reveal">Top Recruiters at SGVU</h2>
+        <p class="recruiters-subtitle reveal delay-1">RENOWNED BRANDS HIRING SGVU TALENT FOR DYNAMIC ROLES ACROSS DIVERSE FIELDS</p>
+        <div class="recruiters-divider reveal delay-1"></div>
+        
+        <div class="recruiters-grid reveal delay-2">
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"></div>
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft"></div>
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"></div>
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM"></div>
+          <div class="recruiter-card"><img src="/KPMG.png" alt="KPMG" style="transform: scale(1.6);"></div>
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco"></div>
+          <div class="recruiter-card"><img src="/Autodesk-Logo-History-6-864x540-removebg-preview.png" alt="Autodesk" style="transform: scale(1.8);"></div>
+          <div class="recruiter-card"><img src="/bosch-removebg-preview.png" alt="Bosch" style="transform: scale(1.5);"></div>
+          <div class="recruiter-card"><img src="/tcs-removebg-preview.png" alt="TCS" style="transform: scale(1.6);"></div>
+          <div class="recruiter-card"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys"></div>
+        </div>
+        
+        <p class="recruiters-more reveal delay-3">& MANY MORE...</p>
+      </div>
+    </section>
+
+    
     <!-- Who Built This Program -->
     <section class="section who-built" id="who-built">
       <div class="container">
@@ -155,7 +212,7 @@
           </div>
           <div class="card who-card">
             <div class="who-icon-wrapper border-green">
-              <img src="/shodhAi.png" alt="Shodh AI" class="who-logo">
+              <img src="/shodh.png" alt="Shodh AI" class="who-logo shodh-logo">
             </div>
             <h3>Shodh AI</h3>
             <p class="who-subtitle text-green">FRONTIER AI</p>
@@ -165,12 +222,11 @@
       </div>
     </section>
 
-    <!-- Why SGVU -->
     <section class="section why-sgvu" id="why-sgvu">
       <div class="container">
         <div class="text-center reveal">
           <p class="pre-title" style="justify-content: center;"><span class="line"></span> WHY CHOOSE US</p>
-          <h2 class="section-title">Why <span class="highlight">SGVU?</span></h2>
+          <h2 class="section-title">Why <span class="highlight">Suresh Gyan Vihar?</span></h2>
           <p class="section-subtitle">Empowering students with world-class education, unmatched infrastructure, and incredible opportunities.</p>
         </div>
         <div class="grid features-grid reveal delay-1">
@@ -178,7 +234,7 @@
             <div class="card-icon-wrapper border-purple">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple"><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg>
             </div>
-            <h3>NAAC 'A' Accredited</h3>
+            <h3>NAAC 'A+' Accredited</h3>
             <p>Recognized for top-tier academic excellence, state-of-the-art infrastructure, and continuous innovation in education.</p>
           </div>
           <div class="card why-card delay-1">
@@ -209,13 +265,26 @@
     <!-- The Playground -->
     <section class="section labs-playground" id="labs" style="background-color: #f7f6f2;">
       <div class="container wide-container">
-        <div class="pre-title reveal"><span class="line"></span> THE PLAYGROUND</div>
-        <h2 class="section-title reveal" style="text-align: left; margin-bottom: 0.5rem; color: #1e1b4b; font-size: 2.8rem;">Four labs. Zero dusty desktops.</h2>
+
+        <h2 class="section-title reveal" style="text-align: left; margin-bottom: 0.5rem; color: #1e1b4b; font-size: clamp(2rem, 4vw, 2.8rem);">Four Labs Built for Growth.</h2>
 
         
         <div class="feature-grid reveal delay-2">
           <!-- Card 1 -->
           <div class="feature-card">
+            <div class="card-image-wrap">
+              <img src="/card4.png" alt="Augmented Human Lab">
+              <div class="card-icon bg-yellow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 11.2C3.1 11.6 2 12.8 2 14.5c0 2.5 2 4.5 4.5 4.5h11c2.5 0 4.5-2 4.5-4.5 0-1.7-1.1-2.9-2.2-3.3"/><path d="M22 14.5c0-1.2-.5-2.2-1.3-3L18 8V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v4l-2.7 3.5C2.5 12.3 2 13.3 2 14.5"/><path d="M15 8h-6"/></svg>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Apple Ecosystem</h3>
+              <p>Master Swift and SwiftUI to build world-class applications for macOS, iOS, and VisionOS. Gain elite, hands-on experience in the premium Apple ecosystem to power tomorrow's elegant user experiences.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="feature-card delay-1">
             <div class="card-image-wrap">
               <img src="/card1.webp" alt="Foundation Model Lab">
               <div class="card-icon bg-purple">
@@ -223,12 +292,12 @@
               </div>
             </div>
             <div class="card-content">
-              <h3>Foundation Model Lab</h3>
-              <p>Help train and improve AI models used in real research — the same kind of work AI research engineers do at top companies.</p>
+              <h3>NVIDIA Pipeline</h3>
+              <p>Master GPU computing, CUDA, and generative AI stacks in our high-performance NVIDIA lab. Build data-intensive intelligence and become a true architect of modern cloud infrastructure.</p>
             </div>
           </div>
-          <!-- Card 2 -->
-          <div class="feature-card delay-1">
+          <!-- Card 3 -->
+          <div class="feature-card delay-2">
             <div class="card-image-wrap">
               <img src="/card2_compressed.jpg" alt="Embodied Brain Lab">
               <div class="card-icon bg-blue">
@@ -237,11 +306,11 @@
             </div>
             <div class="card-content">
               <h3>Embodied Brain Lab</h3>
-              <p>Build robots and machines that move and think — using real robotics hardware and software (NVIDIA Jetson).</p>
+              <p>Build autonomous robots that perceive and react in real-time using NVIDIA Jetson and ROS. Master the interplay of neural intelligence, computer vision, and mechanical control for next-gen robotics.</p>
             </div>
           </div>
-          <!-- Card 3 -->
-          <div class="feature-card delay-2">
+          <!-- Card 4 -->
+          <div class="feature-card delay-3">
             <div class="card-image-wrap">
               <img src="/card3.webp" alt="RISC-V Systems Lab">
               <div class="card-icon bg-teal">
@@ -249,21 +318,8 @@
               </div>
             </div>
             <div class="card-content">
-              <h3>RISC-V Systems Lab</h3>
-              <p>Learn how computer chips are actually designed — a fast-growing, high-paying field in India right now.</p>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="feature-card delay-3">
-            <div class="card-image-wrap">
-              <img src="/card4.png" alt="Augmented Human Lab">
-              <div class="card-icon bg-yellow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 11.2C3.1 11.6 2 12.8 2 14.5c0 2.5 2 4.5 4.5 4.5h11c2.5 0 4.5-2 4.5-4.5 0-1.7-1.1-2.9-2.2-3.3"/><path d="M22 14.5c0-1.2-.5-2.2-1.3-3L18 8V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v4l-2.7 3.5C2.5 12.3 2 13.3 2 14.5"/><path d="M15 8h-6"/></svg>
-              </div>
-            </div>
-            <div class="card-content">
-              <h3>Augmented Human Lab</h3>
-              <p>Get hands-on with Apple Vision Pro and build futuristic interfaces most engineers only read about in tech news.</p>
+              <h3>RISC-V Lab</h3>
+              <p>Engage in the complete lifecycle of chip design, from RTL to physical implementation. Master open-source RISC-V architectures and engineer custom silicon for the next generation of AI computing.</p>
             </div>
           </div>
         </div>
@@ -548,9 +604,8 @@
     <!-- Campus Residency Section -->
     <section class="section labs-playground" id="residency" style="background-color: #fafbfd;">
       <div class="container wide-container">
-        <h2 class="section-title reveal" style="text-align: left; margin-bottom: 0.5rem; color: #1e1b4b; font-size: 2.8rem;">A campus built for a 4-year residency, not just a degree.</h2>
-        <p class="section-subtitle reveal delay-1" style="text-align: left; max-width: 800px; color: #64748b; font-size: 1.2rem; margin-bottom: 4rem;">Secure hostels, real support systems and a student life that keeps families reassured from day one.</p>
-        
+        <h2 class="section-title reveal" style="text-align: left; margin-bottom: 2rem; color: #1e1b4b; font-size: 2.8rem;">Vibrant & Secure Campus Life</h2>
+
         <div class="feature-grid reveal delay-2">
           <!-- Card 1 -->
           <div class="feature-card">
@@ -663,7 +718,7 @@
         <!-- Column 1: Logo & Socials -->
         <div class="footer-col brand-col">
           <div class="logo-group" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-            <a href="#" class="logo"><img src="/sgvu-logo.png" alt="SGVU Logo" class="logo-img footer-logo"></a>
+            <a href="#home" class="logo"><img src="/sgvu-logo.png" alt="SGVU Logo" class="logo-img footer-logo"></a>
           </div>
           <p class="footer-desc">Empowering the next generation of tech leaders with cutting-edge specializations and industry-aligned curriculum.</p>
           
@@ -678,13 +733,7 @@
         <div class="footer-col links-col">
           <h3 class="footer-heading">Quick Links</h3>
           <ul class="footer-links-new">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#specializations">Programs</a></li>
-            <li><a href="#four-labs">Four Labs</a></li>
-            <li><a href="#why-sgvu">Why SGVU</a></li>
-            <li><a href="#residency">Residency</a></li>
-            <li><a href="#campus">Campus Life</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="https://admissions.gyanvihar.org/" target="_blank">admissions.gyanvihar.org</a></li>
           </ul>
         </div>
 
@@ -731,7 +780,7 @@
       <div class="popup-content">
         <button class="popup-close" id="popup-close">&times;</button>
         <img src="/Web%20Pop%20up.png" alt="Announcement Banner">
-        <a href="#home" class="btn btn-primary popup-apply-btn" id="popup-apply-btn">Apply Now</a>
+        <a href="#apply-form" class="btn btn-primary popup-apply-btn" id="popup-apply-btn">Apply Now</a>
       </div>
     </div>
 
